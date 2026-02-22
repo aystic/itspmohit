@@ -158,7 +158,6 @@ h2 {
 
 h3 {
 	font-size: 1rem;
-	text-decoration: underline;
 }
 
 ul {
@@ -220,6 +219,10 @@ hr {
 }
 
 .content-list li {
+	list-style-type: circle;
+}
+
+.organization-list li {
 	list-style-type: none;
 }
 
@@ -268,6 +271,7 @@ hr {
 #profile-picture {
 	height: 200px;
 	border-radius: 100%;
+	border: 1px solid var(--border-color);
 }
 
 .handshake {

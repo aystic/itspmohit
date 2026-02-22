@@ -220,7 +220,7 @@ hr {
 }
 
 .content-list li {
-	list-style-type: circle;
+	list-style-type: none;
 }
 
 .experience-header-list li {

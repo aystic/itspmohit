@@ -83,10 +83,15 @@ h6 {
 :root {
 	--bg: #ffffff;
 	--text: #111111;
-	--link: red;
-	--link-visited: blue;
-	--link-hover: orange;
-	--border-color: black;
+	--link: blue;
+	--link-visited: purple;
+	--link-hover: #ff4500;
+	--border-color: #ebebeb;
+	--scroll-btn-color: black;
+	--scroll-btn-bg-color: rgba(0, 0, 0, 0.15);
+	--scroll-btn-border-color: rgba(0, 0, 0, 0.3);
+	--scroll-btn-box-shadow: rgba(255, 255, 255, 0.15);
+	--scroll-btn-bg-color-hover: rgba(0, 0, 0, 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -97,6 +102,11 @@ h6 {
 		--link-visited: orange;
 		--link-hover: orange;
 		--border-color: #5c5c5c;
+		--scroll-btn-color: white;
+		--scroll-btn-bg-color: rgba(255, 255, 255, 0.15);
+		--scroll-btn-border-color: rgba(255, 255, 255, 0.3);
+		--scroll-btn-box-shadow: rgba(0, 0, 0, 0.15);
+		--scroll-btn-bg-color-hover: rgba(255, 255, 255, 0.25);
 	}
 }
 
@@ -145,6 +155,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
+	margin-bottom: 20px;
 }
 
 main {
@@ -157,6 +168,10 @@ main {
 
 #main-footer {
 	border-top: 1px solid var(--border-color);
+}
+
+#main-footer>p {
+	text-align: center;
 }
 
 .container {
@@ -206,12 +221,12 @@ main {
 	border-radius: 50%;
 	text-decoration: none;
 	font-size: 1.2rem;
-	color: white;
-	background-color: rgba(255, 255, 255, 0.15);
+	color: var(--scroll-btn-color);
+	background-color: var(--scroll-btn-bg-color);
 	backdrop-filter: blur(12px) saturate(180%);
 	-webkit-backdrop-filter: blur(12px) saturate(180%);
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	border: 1px solid var(--scroll-btn-border-color);
+	box-shadow: 0 4px 16px var(--scroll-btn-box-shadow);
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 	user-select: none;
@@ -220,7 +235,7 @@ main {
 }
 
 .scroll-btns a:hover {
-	background-color: rgba(255, 255, 255, 0.25);
+	background-color: var(--scroll-btn-bg-color-hover);
 }
 
 /* hover for desktop only */

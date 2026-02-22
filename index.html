@@ -18,193 +18,127 @@
 	<link rel="manifest" href="static/favicon/site.webmanifest">
 </head>
 
+
 <body>
-	<nav id="main-header">
-		<a href="#">Home</a>
-		<a href="#about-me">About</a>
-		<a href="#education-and-experience">Education/Experience</a>
-		<a href="#projects">Projects</a>
-		<a download href="static/Mohit-Pathak.pdf">Resume</a>
-		<a href="#blogs">Blogs</a>
-		<a target="_blank" href="mailto:itspmohit@gmail.com?subject=Hello%20Mohit%2C%20Let%27s%20Connect!">Contact Me</a>
-		<div class="scroll-btns">
-			<a href="#main-header" title="Go to top">↑</a>
-			<a href="#main-footer" title="Go to bottom">↓</a>
+	<header id="main-header">
+		<nav aria-label="Main navigation">
+			<ul role="list" class="navigation-list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#about-me">About</a></li>
+				<li><a href="#education-and-experience">Education &amp; Experience</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#blogs">Blogs</a></li>
+				<li><a href="static/Mohit-Pathak.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+				<li><a href="mailto:itspmohit@gmail.com?subject=Let%27s%20Build%20Something%20Interesting" target="_blank"
+						rel="noopener noreferrer">Contact Me</a></li>
+			</ul>
+		</nav>
+
+		<div class="scroll-btns" aria-label="Page navigation">
+			<a href="#main-header" title="Go to top" aria-label="Go to top">↑</a>
+			<a href="#main-footer" title="Go to bottom" aria-label="Go to bottom">↓</a>
 		</div>
-	</nav>
-	<article class="handshake">
-		<img src="static/MohitPathak.webp" id="profile-picture" />
+	</header>
+
+
+
+	<section class="handshake" aria-label="Profile introduction">
+		<img src="static/MohitPathak.webp" id="profile-picture" alt="Mohit Pathak profile picture" />
 		<div class="designation">
-			<b>Software Engineer - Backend</b>
+			<p><strong>Software Engineer - Backend</strong></p>
 			<p>2.5 YOE | India</p>
 		</div>
-	</article>
-	<main id="about-me">
-		lorem ipsum dolor sit amet, consectetur adipisicing elit. beatae explicabo harum dolorem distinctio doloremque alias
-		consequatur quia dolorum dicta possimus quos voluptatibus assumenda id blanditiis tenetur modi, eos quibusdam.
-		lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris eget elit sit amet orci mollis interdum. sed
-		laoreet, lectus vitae efficitur iaculis, nunc quam imperdiet orci, ut maximus est tortor nec arcu. duis euismod diam
-		nisi, et pellentesque purus tempus sed. donec bibendum blandit ipsum, vel venenatis ipsum. interdum et malesuada
-		fames ac ante ipsum primis in faucibus. in dictum velit eget lectus pharetra mattis. sed metus ante, sollicitudin
-		sed lacus ut, iaculis sodales ligula. vestibulum dapibus, dui ac condimentum pretium, nisi diam fringilla erat, sed
-		porta lorem diam in neque. curabitur convallis nulla blandit arcu maximus mollis. nam commodo ex ante, et auctor
-		turpis blandit at. nulla blandit, justo vitae pharetra viverra, enim libero efficitur enim, ut commodo est magna id
-		risus. etiam bibendum laoreet erat, ut pulvinar est. donec aliquet enim non tincidunt suscipit. class aptent taciti
-		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. nullam lorem nulla, hendrerit nec facilisis
-		ut, pharetra in purus.
+	</section>
 
-		proin at tempus diam. sed eget nisl non leo viverra tristique iaculis nec libero. suspendisse maximus egestas
-		sagittis. vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; orci varius
-		natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. cras imperdiet libero ut sem ultrices, a
-		sollicitudin ipsum tincidunt. praesent lobortis pulvinar velit.
+	<main>
+		<section id="about-me" aria-labelledby="about-heading">
+			<h2 id="about-heading">About Me</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et egestas est. Aliquam et leo tincidunt, ultricies
+				velit vel, rutrum augue. Sed finibus odio magna, id tincidunt eros fermentum eget. Donec eget orci sem. Ut quis
+				ligula vitae arcu ultricies molestie mattis congue urna. Fusce at maximus nisi. Sed ac metus cursus, ultricies
+				mi id, mollis diam. Morbi maximus risus id vestibulum pellentesque. Aenean facilisis commodo urna et auctor.
+				Duis imperdiet feugiat mollis. Morbi odio ligula, viverra et molestie quis, auctor at purus. Fusce elit massa,
+				ullamcorper nec posuere nec, tempor eget nulla. Fusce varius leo eu lectus vulputate, sed rhoncus lacus euismod.
+				Nunc finibus felis id fringilla consequat.
 
-		mauris suscipit eros eu aliquam sollicitudin. morbi pellentesque velit nunc, non congue elit laoreet quis. vivamus
-		tristique tempor turpis, dapibus luctus tortor porttitor quis. vestibulum quis enim erat. vestibulum et posuere
-		purus. lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam dictum lectus gravida, malesuada dui eget,
-		rutrum velit. curabitur tortor purus, ultrices vel est eget, ornare congue neque. suspendisse pellentesque quis
-		libero eget lobortis. morbi convallis bibendum augue in volutpat. nunc luctus suscipit ante et efficitur. sed
-		ultricies vehicula turpis ultrices luctus. sed tincidunt purus nibh, in porta turpis semper a. quisque augue nulla,
-		consequat quis ipsum ac, accumsan ornare nunc. duis sit amet lectus ornare, dignissim enim a, vestibulum ex. nulla
-		et orci a urna scelerisque commodo in sit amet velit.
+				Donec ipsum turpis, ullamcorper quis nunc quis, cursus cursus turpis. Duis sit amet felis sapien. Mauris eu
+				turpis convallis, maximus odio pharetra, commodo augue. Duis a elit elit. Suspendisse a tellus tellus. Proin
+				eget vehicula risus, non porttitor dui. Cras dignissim sapien est, eleifend varius erat elementum sed.
+				Suspendisse potenti. Nullam finibus pretium tempus. Fusce pellentesque euismod tellus, ac lacinia risus pharetra
+				tristique. Curabitur eu massa faucibus, laoreet est eget, volutpat ligula.
+			</p>
+		</section>
 
-		fusce dapibus vehicula viverra. mauris consectetur augue et dignissim dictum. donec eu dolor et orci tristique
-		mollis. etiam iaculis mauris non iaculis porta. pellentesque eleifend lorem dolor, in placerat nulla feugiat sit
-		amet. maecenas accumsan, ipsum sed sollicitudin vehicula, nunc est venenatis lacus, et varius orci nisl vitae ipsum.
-		etiam id purus turpis. vivamus auctor fringilla eros eget rhoncus. curabitur placerat mi tortor, non eleifend turpis
-		volutpat nec. donec id commodo orci. ut quis pellentesque nunc.
+		<section id="education-and-experience" aria-labelledby="edu-heading">
+			<h2 id="edu-heading">Education &amp; Experience</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et egestas est. Aliquam et leo tincidunt, ultricies
+				velit vel, rutrum augue. Sed finibus odio magna, id tincidunt eros fermentum eget. Donec eget orci sem. Ut quis
+				ligula vitae arcu ultricies molestie mattis congue urna. Fusce at maximus nisi. Sed ac metus cursus, ultricies
+				mi id, mollis diam. Morbi maximus risus id vestibulum pellentesque. Aenean facilisis commodo urna et auctor.
+				Duis imperdiet feugiat mollis. Morbi odio ligula, viverra et molestie quis, auctor at purus. Fusce elit massa,
+				ullamcorper nec posuere nec, tempor eget nulla. Fusce varius leo eu lectus vulputate, sed rhoncus lacus euismod.
+				Nunc finibus felis id fringilla consequat.
 
-		duis orci neque, finibus ac finibus ut, euismod ac est. aenean erat ante, ultrices sit amet venenatis eu, congue
-		vitae leo. suspendisse sit amet justo sodales, viverra velit quis, rhoncus nisl. donec dictum elementum lectus.
-		interdum et malesuada fames ac ante ipsum primis in faucibus. sed mollis vulputate laoreet. aliquam erat volutpat.
-		donec accumsan leo vel lorem gravida, semper condimentum risus elementum. pellentesque malesuada scelerisque velit.
-		curabitur leo sem, mattis vitae nisi eu, auctor sollicitudin lectus. cumque!
-	</main>
-	<main id="education-and-experience">
-		lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris eget elit sit amet orci mollis interdum. sed
-		laoreet, lectus vitae efficitur iaculis, nunc quam imperdiet orci, ut maximus est tortor nec arcu. duis euismod diam
-		nisi, et pellentesque purus tempus sed. donec bibendum blandit ipsum, vel venenatis ipsum. interdum et malesuada
-		fames ac ante ipsum primis in faucibus. in dictum velit eget lectus pharetra mattis. sed metus ante, sollicitudin
-		sed lacus ut, iaculis sodales ligula. vestibulum dapibus, dui ac condimentum pretium, nisi diam fringilla erat, sed
-		porta lorem diam in neque. curabitur convallis nulla blandit arcu maximus mollis. nam commodo ex ante, et auctor
-		turpis blandit at. nulla blandit, justo vitae pharetra viverra, enim libero efficitur enim, ut commodo est magna id
-		risus. etiam bibendum laoreet erat, ut pulvinar est. donec aliquet enim non tincidunt suscipit. class aptent taciti
-		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. nullam lorem nulla, hendrerit nec facilisis
-		ut, pharetra in purus.
+				Donec ipsum turpis, ullamcorper quis nunc quis, cursus cursus turpis. Duis sit amet felis sapien. Mauris eu
+				turpis convallis, maximus odio pharetra, commodo augue. Duis a elit elit. Suspendisse a tellus tellus. Proin
+				eget vehicula risus, non porttitor dui. Cras dignissim sapien est, eleifend varius erat elementum sed.
+				Suspendisse potenti. Nullam finibus pretium tempus. Fusce pellentesque euismod tellus, ac lacinia risus pharetra
+				tristique. Curabitur eu massa faucibus, laoreet est eget, volutpat ligula.
+			</p>
+		</section>
 
-		proin at tempus diam. sed eget nisl non leo viverra tristique iaculis nec libero. suspendisse maximus egestas
-		sagittis. vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; orci varius
-		natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. cras imperdiet libero ut sem ultrices, a
-		sollicitudin ipsum tincidunt. praesent lobortis pulvinar velit.
+		<section id="projects" aria-labelledby="projects-heading">
+			<h2 id="projects-heading">Projects</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et egestas est. Aliquam et leo tincidunt, ultricies
+				velit vel, rutrum augue. Sed finibus odio magna, id tincidunt eros fermentum eget. Donec eget orci sem. Ut quis
+				ligula vitae arcu ultricies molestie mattis congue urna. Fusce at maximus nisi. Sed ac metus cursus, ultricies
+				mi id, mollis diam. Morbi maximus risus id vestibulum pellentesque. Aenean facilisis commodo urna et auctor.
+				Duis imperdiet feugiat mollis. Morbi odio ligula, viverra et molestie quis, auctor at purus. Fusce elit massa,
+				ullamcorper nec posuere nec, tempor eget nulla. Fusce varius leo eu lectus vulputate, sed rhoncus lacus euismod.
+				Nunc finibus felis id fringilla consequat.
 
-		mauris suscipit eros eu aliquam sollicitudin. morbi pellentesque velit nunc, non congue elit laoreet quis. vivamus
-		tristique tempor turpis, dapibus luctus tortor porttitor quis. vestibulum quis enim erat. vestibulum et posuere
-		purus. lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam dictum lectus gravida, malesuada dui eget,
-		rutrum velit. curabitur tortor purus, ultrices vel est eget, ornare congue neque. suspendisse pellentesque quis
-		libero eget lobortis. morbi convallis bibendum augue in volutpat. nunc luctus suscipit ante et efficitur. sed
-		ultricies vehicula turpis ultrices luctus. sed tincidunt purus nibh, in porta turpis semper a. quisque augue nulla,
-		consequat quis ipsum ac, accumsan ornare nunc. duis sit amet lectus ornare, dignissim enim a, vestibulum ex. nulla
-		et orci a urna scelerisque commodo in sit amet velit.
+				Donec ipsum turpis, ullamcorper quis nunc quis, cursus cursus turpis. Duis sit amet felis sapien. Mauris eu
+				turpis convallis, maximus odio pharetra, commodo augue. Duis a elit elit. Suspendisse a tellus tellus. Proin
+				eget vehicula risus, non porttitor dui. Cras dignissim sapien est, eleifend varius erat elementum sed.
+				Suspendisse potenti. Nullam finibus pretium tempus. Fusce pellentesque euismod tellus, ac lacinia risus pharetra
+				tristique. Curabitur eu massa faucibus, laoreet est eget, volutpat ligula.
+			</p>
+		</section>
 
-		fusce dapibus vehicula viverra. mauris consectetur augue et dignissim dictum. donec eu dolor et orci tristique
-		mollis. etiam iaculis mauris non iaculis porta. pellentesque eleifend lorem dolor, in placerat nulla feugiat sit
-		amet. maecenas accumsan, ipsum sed sollicitudin vehicula, nunc est venenatis lacus, et varius orci nisl vitae ipsum.
-		etiam id purus turpis. vivamus auctor fringilla eros eget rhoncus. curabitur placerat mi tortor, non eleifend turpis
-		volutpat nec. donec id commodo orci. ut quis pellentesque nunc.
+		<section id="blogs" aria-labelledby="blogs-heading">
+			<h2 id="blogs-heading">Blogs</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et egestas est. Aliquam et leo tincidunt, ultricies
+				velit vel, rutrum augue. Sed finibus odio magna, id tincidunt eros fermentum eget. Donec eget orci sem. Ut quis
+				ligula vitae arcu ultricies molestie mattis congue urna. Fusce at maximus nisi. Sed ac metus cursus, ultricies
+				mi id, mollis diam. Morbi maximus risus id vestibulum pellentesque. Aenean facilisis commodo urna et auctor.
+				Duis imperdiet feugiat mollis. Morbi odio ligula, viverra et molestie quis, auctor at purus. Fusce elit massa,
+				ullamcorper nec posuere nec, tempor eget nulla. Fusce varius leo eu lectus vulputate, sed rhoncus lacus euismod.
+				Nunc finibus felis id fringilla consequat.
 
-		duis orci neque, finibus ac finibus ut, euismod ac est. aenean erat ante, ultrices sit amet venenatis eu, congue
-		vitae leo. suspendisse sit amet justo sodales, viverra velit quis, rhoncus nisl. donec dictum elementum lectus.
-		interdum et malesuada fames ac ante ipsum primis in faucibus. sed mollis vulputate laoreet. aliquam erat volutpat.
-		donec accumsan leo vel lorem gravida, semper condimentum risus elementum. pellentesque malesuada scelerisque velit.
-		curabitur leo sem, mattis vitae nisi eu, auctor sollicitudin lectus.
-	</main>
-	<main id="projects">
-		lorem ipsum dolor sit amet, consectetur adipisicing elit. beatae explicabo harum dolorem distinctio doloremque alias
-		consequatur quia dolorum dicta possimus quos voluptatibus assumenda id blanditiis tenetur modi, eos quibusdam.
-		lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris eget elit sit amet orci mollis interdum. sed
-		laoreet, lectus vitae efficitur iaculis, nunc quam imperdiet orci, ut maximus est tortor nec arcu. duis euismod diam
-		nisi, et pellentesque purus tempus sed. donec bibendum blandit ipsum, vel venenatis ipsum. interdum et malesuada
-		fames ac ante ipsum primis in faucibus. in dictum velit eget lectus pharetra mattis. sed metus ante, sollicitudin
-		sed lacus ut, iaculis sodales ligula. vestibulum dapibus, dui ac condimentum pretium, nisi diam fringilla erat, sed
-		porta lorem diam in neque. curabitur convallis nulla blandit arcu maximus mollis. nam commodo ex ante, et auctor
-		turpis blandit at. nulla blandit, justo vitae pharetra viverra, enim libero efficitur enim, ut commodo est magna id
-		risus. etiam bibendum laoreet erat, ut pulvinar est. donec aliquet enim non tincidunt suscipit. class aptent taciti
-		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. nullam lorem nulla, hendrerit nec facilisis
-		ut, pharetra in purus.
-
-		proin at tempus diam. sed eget nisl non leo viverra tristique iaculis nec libero. suspendisse maximus egestas
-		sagittis. vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; orci varius
-		natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. cras imperdiet libero ut sem ultrices, a
-		sollicitudin ipsum tincidunt. praesent lobortis pulvinar velit.
-
-		mauris suscipit eros eu aliquam sollicitudin. morbi pellentesque velit nunc, non congue elit laoreet quis. vivamus
-		tristique tempor turpis, dapibus luctus tortor porttitor quis. vestibulum quis enim erat. vestibulum et posuere
-		purus. lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam dictum lectus gravida, malesuada dui eget,
-		rutrum velit. curabitur tortor purus, ultrices vel est eget, ornare congue neque. suspendisse pellentesque quis
-		libero eget lobortis. morbi convallis bibendum augue in volutpat. nunc luctus suscipit ante et efficitur. sed
-		ultricies vehicula turpis ultrices luctus. sed tincidunt purus nibh, in porta turpis semper a. quisque augue nulla,
-		consequat quis ipsum ac, accumsan ornare nunc. duis sit amet lectus ornare, dignissim enim a, vestibulum ex. nulla
-		et orci a urna scelerisque commodo in sit amet velit.
-
-		fusce dapibus vehicula viverra. mauris consectetur augue et dignissim dictum. donec eu dolor et orci tristique
-		mollis. etiam iaculis mauris non iaculis porta. pellentesque eleifend lorem dolor, in placerat nulla feugiat sit
-		amet. maecenas accumsan, ipsum sed sollicitudin vehicula, nunc est venenatis lacus, et varius orci nisl vitae ipsum.
-		etiam id purus turpis. vivamus auctor fringilla eros eget rhoncus. curabitur placerat mi tortor, non eleifend turpis
-		volutpat nec. donec id commodo orci. ut quis pellentesque nunc.
-
-		duis orci neque, finibus ac finibus ut, euismod ac est. aenean erat ante, ultrices sit amet venenatis eu, congue
-		vitae leo. suspendisse sit amet justo sodales, viverra velit quis, rhoncus nisl. donec dictum elementum lectus.
-		interdum et malesuada fames ac ante ipsum primis in faucibus. sed mollis vulputate laoreet. aliquam erat volutpat.
-		donec accumsan leo vel lorem gravida, semper condimentum risus elementum. pellentesque malesuada scelerisque velit.
-		curabitur leo sem, mattis vitae nisi eu, auctor sollicitudin lectus. cumque!
-	</main>
-	<main id="blogs">
-		lorem ipsum dolor sit amet, consectetur adipisicing elit. beatae explicabo harum dolorem distinctio doloremque alias
-		consequatur quia dolorum dicta possimus quos voluptatibus assumenda id blanditiis tenetur modi, eos quibusdam.
-		lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris eget elit sit amet orci mollis interdum. sed
-		laoreet, lectus vitae efficitur iaculis, nunc quam imperdiet orci, ut maximus est tortor nec arcu. duis euismod diam
-		nisi, et pellentesque purus tempus sed. donec bibendum blandit ipsum, vel venenatis ipsum. interdum et malesuada
-		fames ac ante ipsum primis in faucibus. in dictum velit eget lectus pharetra mattis. sed metus ante, sollicitudin
-		sed lacus ut, iaculis sodales ligula. vestibulum dapibus, dui ac condimentum pretium, nisi diam fringilla erat, sed
-		porta lorem diam in neque. curabitur convallis nulla blandit arcu maximus mollis. nam commodo ex ante, et auctor
-		turpis blandit at. nulla blandit, justo vitae pharetra viverra, enim libero efficitur enim, ut commodo est magna id
-		risus. etiam bibendum laoreet erat, ut pulvinar est. donec aliquet enim non tincidunt suscipit. class aptent taciti
-		sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. nullam lorem nulla, hendrerit nec facilisis
-		ut, pharetra in purus.
-
-		proin at tempus diam. sed eget nisl non leo viverra tristique iaculis nec libero. suspendisse maximus egestas
-		sagittis. vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; orci varius
-		natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. cras imperdiet libero ut sem ultrices, a
-		sollicitudin ipsum tincidunt. praesent lobortis pulvinar velit.
-
-		mauris suscipit eros eu aliquam sollicitudin. morbi pellentesque velit nunc, non congue elit laoreet quis. vivamus
-		tristique tempor turpis, dapibus luctus tortor porttitor quis. vestibulum quis enim erat. vestibulum et posuere
-		purus. lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam dictum lectus gravida, malesuada dui eget,
-		rutrum velit. curabitur tortor purus, ultrices vel est eget, ornare congue neque. suspendisse pellentesque quis
-		libero eget lobortis. morbi convallis bibendum augue in volutpat. nunc luctus suscipit ante et efficitur. sed
-		ultricies vehicula turpis ultrices luctus. sed tincidunt purus nibh, in porta turpis semper a. quisque augue nulla,
-		consequat quis ipsum ac, accumsan ornare nunc. duis sit amet lectus ornare, dignissim enim a, vestibulum ex. nulla
-		et orci a urna scelerisque commodo in sit amet velit.
-
-		fusce dapibus vehicula viverra. mauris consectetur augue et dignissim dictum. donec eu dolor et orci tristique
-		mollis. etiam iaculis mauris non iaculis porta. pellentesque eleifend lorem dolor, in placerat nulla feugiat sit
-		amet. maecenas accumsan, ipsum sed sollicitudin vehicula, nunc est venenatis lacus, et varius orci nisl vitae ipsum.
-		etiam id purus turpis. vivamus auctor fringilla eros eget rhoncus. curabitur placerat mi tortor, non eleifend turpis
-		volutpat nec. donec id commodo orci. ut quis pellentesque nunc.
-
-		duis orci neque, finibus ac finibus ut, euismod ac est. aenean erat ante, ultrices sit amet venenatis eu, congue
-		vitae leo. suspendisse sit amet justo sodales, viverra velit quis, rhoncus nisl. donec dictum elementum lectus.
-		interdum et malesuada fames ac ante ipsum primis in faucibus. sed mollis vulputate laoreet. aliquam erat volutpat.
-		donec accumsan leo vel lorem gravida, semper condimentum risus elementum. pellentesque malesuada scelerisque velit.
-		curabitur leo sem, mattis vitae nisi eu, auctor sollicitudin lectus. cumque!
+				Donec ipsum turpis, ullamcorper quis nunc quis, cursus cursus turpis. Duis sit amet felis sapien. Mauris eu
+				turpis convallis, maximus odio pharetra, commodo augue. Duis a elit elit. Suspendisse a tellus tellus. Proin
+				eget vehicula risus, non porttitor dui. Cras dignissim sapien est, eleifend varius erat elementum sed.
+				Suspendisse potenti. Nullam finibus pretium tempus. Fusce pellentesque euismod tellus, ac lacinia risus pharetra
+				tristique. Curabitur eu massa faucibus, laoreet est eget, volutpat ligula.
+			</p>
+		</section>
 	</main>
 
 	<footer id="main-footer">
-		<p id="copyright-text">Copyright (c) 2026 Mohit Pathak. All Rights Reserved. </p>
-		<div class="container">
-			<a target="_blank" href="https://linkedin.com/in/aystic">LinkedIn</a>
-			<a target="_blank" href="https://github.com/aystic">Github</a>
-			<a target="_blank" href="https://github.com/aystic.gpg">GPG Key</a>
-		</div>
+		<small>
+			<p id="copyright-text">Copyright &copy; 2026. All Rights Reserved.</p>
+		</small>
+		<address>
+			<ul role="list" class="footer-container">
+				<li><a target="_blank" href="https://linkedin.com/in/" rel="noopener noreferrer">LinkedIn</a></li>
+				<li><a target="_blank" href="https://github.com/" rel="noopener noreferrer">GitHub</a></li>
+				<li><a target="_blank" href="https://github.com/" rel="noopener noreferrer">GPG Key</a></li>
+			</ul>
+		</address>
 	</footer>
 </body>
 

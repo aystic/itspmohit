@@ -46,85 +46,131 @@
 		<img src="static/MohitPathak.webp" id="profile-picture" alt="Mohit Pathak profile picture" />
 		<div class="designation">
 			<p><strong>Software Engineer - Backend</strong></p>
-			<p>2.5 YOE | India</p>
+			<p>India</p>
 		</div>
 	</section>
 
 	<main>
 		<section id="about-me" aria-labelledby="about-heading">
-			<h2 id="about-heading">About Me</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et egestas est. Aliquam et leo tincidunt, ultricies
-				velit vel, rutrum augue. Sed finibus odio magna, id tincidunt eros fermentum eget. Donec eget orci sem. Ut quis
-				ligula vitae arcu ultricies molestie mattis congue urna. Fusce at maximus nisi. Sed ac metus cursus, ultricies
-				mi id, mollis diam. Morbi maximus risus id vestibulum pellentesque. Aenean facilisis commodo urna et auctor.
-				Duis imperdiet feugiat mollis. Morbi odio ligula, viverra et molestie quis, auctor at purus. Fusce elit massa,
-				ullamcorper nec posuere nec, tempor eget nulla. Fusce varius leo eu lectus vulputate, sed rhoncus lacus euismod.
-				Nunc finibus felis id fringilla consequat.
-
-				Donec ipsum turpis, ullamcorper quis nunc quis, cursus cursus turpis. Duis sit amet felis sapien. Mauris eu
-				turpis convallis, maximus odio pharetra, commodo augue. Duis a elit elit. Suspendisse a tellus tellus. Proin
-				eget vehicula risus, non porttitor dui. Cras dignissim sapien est, eleifend varius erat elementum sed.
-				Suspendisse potenti. Nullam finibus pretium tempus. Fusce pellentesque euismod tellus, ac lacinia risus pharetra
-				tristique. Curabitur eu massa faucibus, laoreet est eget, volutpat ligula.
-			</p>
+			<h2 id="about-heading">About</h2>
+			<ul role="list" class="content-list">
+				<li>
+					Graduated with a degree in Computer Engineering from J.C. Bose University of Science and Technology, YMCA, in
+					2023.
+				</li>
+				<li>
+					I am a passionate Software Engineer with experience in Ruby on Rails, ReactJS, Ruby, JavaScript, PostgreSQL,
+					Docker, Linux, and AWS.
+				</li>
+				<li>
+					I adore GNU/Linux. My first “Eureka Moment” was when I built a simple website using HTML, CSS, and JS, and the
+					second was when I dual-booted Ubuntu on my laptop and explored Linux. I have done my fair share of tinkering
+					on different Linux systems and eventually settled on Fedora as my daily driver.
+				</li>
+				<li>
+					I am constantly exploring and learning new things. I like reading technical and personal development books and
+					diving deep into the technical documentation of whatever fascinates me.
+				</li>
+				<li>
+					When not at my desk, you’ll find me either spending time in nature or carving corners on my motorcycle in the
+					twisties.
+				</li>
+			</ul>
 		</section>
+		<hr>
 
 		<section id="education-and-experience" aria-labelledby="edu-heading">
 			<h2 id="edu-heading">Education &amp; Experience</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et egestas est. Aliquam et leo tincidunt, ultricies
-				velit vel, rutrum augue. Sed finibus odio magna, id tincidunt eros fermentum eget. Donec eget orci sem. Ut quis
-				ligula vitae arcu ultricies molestie mattis congue urna. Fusce at maximus nisi. Sed ac metus cursus, ultricies
-				mi id, mollis diam. Morbi maximus risus id vestibulum pellentesque. Aenean facilisis commodo urna et auctor.
-				Duis imperdiet feugiat mollis. Morbi odio ligula, viverra et molestie quis, auctor at purus. Fusce elit massa,
-				ullamcorper nec posuere nec, tempor eget nulla. Fusce varius leo eu lectus vulputate, sed rhoncus lacus euismod.
-				Nunc finibus felis id fringilla consequat.
-
-				Donec ipsum turpis, ullamcorper quis nunc quis, cursus cursus turpis. Duis sit amet felis sapien. Mauris eu
-				turpis convallis, maximus odio pharetra, commodo augue. Duis a elit elit. Suspendisse a tellus tellus. Proin
-				eget vehicula risus, non porttitor dui. Cras dignissim sapien est, eleifend varius erat elementum sed.
-				Suspendisse potenti. Nullam finibus pretium tempus. Fusce pellentesque euismod tellus, ac lacinia risus pharetra
-				tristique. Curabitur eu massa faucibus, laoreet est eget, volutpat ligula.
-			</p>
+			<ul role="list" class="content-list">
+				<li>
+					<article aria-labelledby="fte-job1">
+						<header class="parent-row">
+							<div class="organization row">
+								<h3 id="fte-job1" class="col-1">Squadsy(Acquired by ClayHR)</h3>
+								<time datetime="2023-08/2025-09" class="col-2">08/23–09/25</time>
+							</div>
+							<div class="role row">
+								<p class="col-1">Founding Engineer</p>
+							</div>
+						</header>
+						<ul role="list" aria-label="Relevant Work" class="work-info-list">
+							<li>Architected and built a rule-driven automation engine supporting multi-channel messaging (Email,
+								Slack, SMS, Teams) with asynchronous processing via Sidekiq, implementing retries, priority queues, and
+								throttling for reliability under burst traffic.</li>
+							<li>Optimized high-volume employee filtering and journey assignment workflows, improving API response
+								times by 50–300x and enabling smooth handling of 10k+ records per request.</li>
+							<li>Designed analytics pipeline for tracking opens, clicks, and engagement aggregation using event-driven
+								models and background jobs, enabling near real-time insights across journeys.</li>
+							<li>Rewrote third-party integrations (Slack, Gmail, Outlook, HRIS) using OAuth authorization code flows,
+								token refresh logic, scheduled validation, and webhook handling; reduced integration-related failures by
+								~80%.</li>
+							<li>Implemented rate limiting (leaky bucket algorithm) and background job throttling to prevent API abuse
+								and ensure system stability under concurrent workloads.</li>
+							<li>Refactored approval/unapproval and bulk operations to non-blocking asynchronous flows, reducing
+								request latency and eliminating race conditions in state transitions.</li>
+							<li>Designed timezone-safe rule scheduling and rescheduling logic to handle employee data changes and
+								distributed execution without duplicate triggers.</li>
+							<li>Owned production infrastructure on AWS Elastic Beanstalk with Docker, resolving Nginx port binding,
+								SSL configuration, worker graceful shutdown, and environment-specific deployment automation.</li>
+						</ul>
+					</article>
+				</li>
+				<li>
+					<article aria-labelledby="internship-2">
+						<header class="parent-row">
+							<div class="organization row">
+								<h3 id="internship-2" class="col-1">Squadsy</h3>
+								<time datetime="2023-01/2023-08" class="col-2">01/23–08/23</time>
+							</div>
+							<div class="role row">
+								<p class="col-1">Full Stack Developer Intern</p>
+							</div>
+						</header>
+						</<article>
+				</li>
+				<li>
+					<article aria-labelledby="internship-1">
+						<header class="parent-row">
+							<div class="organization row">
+								<h3 id="internship-1" class="col-1">Flywheel (Acquired by Sylva)</h3>
+								<time datetime="2022-04/2022-09" class="col-2">04/22–09/22</time>
+							</div>
+							<div class="role row">
+								<p class="col-1">Full Stack Developer Intern</p>
+							</div>
+						</header>
+						</<article>
+				</li>
+				<li>
+					<article aria-labelledby="btech-degree">
+						<header class="parent-row">
+							<div class="institution-row row">
+								<h3 id="btech-degree" class="col-1">J.C Bose UST, YMCA, Faridabad
+								</h3>
+								<time datetime="2019-08/2023-08" class="col-2">08/19–08/23</time>
+							</div>
+							<div class="degree-row row">
+								<p class="col-1">B.Tech CSE</p>
+								<p class="col-2" style="text-align: right;">CGPA: <strong>8.62</strong>/10.00</p>
+							</div>
+						</header>
+					</article>
+				</li>
+			</ul>
 		</section>
+		<hr>
 
 		<section id="projects" aria-labelledby="projects-heading">
 			<h2 id="projects-heading">Projects</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et egestas est. Aliquam et leo tincidunt, ultricies
-				velit vel, rutrum augue. Sed finibus odio magna, id tincidunt eros fermentum eget. Donec eget orci sem. Ut quis
-				ligula vitae arcu ultricies molestie mattis congue urna. Fusce at maximus nisi. Sed ac metus cursus, ultricies
-				mi id, mollis diam. Morbi maximus risus id vestibulum pellentesque. Aenean facilisis commodo urna et auctor.
-				Duis imperdiet feugiat mollis. Morbi odio ligula, viverra et molestie quis, auctor at purus. Fusce elit massa,
-				ullamcorper nec posuere nec, tempor eget nulla. Fusce varius leo eu lectus vulputate, sed rhoncus lacus euismod.
-				Nunc finibus felis id fringilla consequat.
-
-				Donec ipsum turpis, ullamcorper quis nunc quis, cursus cursus turpis. Duis sit amet felis sapien. Mauris eu
-				turpis convallis, maximus odio pharetra, commodo augue. Duis a elit elit. Suspendisse a tellus tellus. Proin
-				eget vehicula risus, non porttitor dui. Cras dignissim sapien est, eleifend varius erat elementum sed.
-				Suspendisse potenti. Nullam finibus pretium tempus. Fusce pellentesque euismod tellus, ac lacinia risus pharetra
-				tristique. Curabitur eu massa faucibus, laoreet est eget, volutpat ligula.
-			</p>
+			<ul role="list" class="content-list">
+			</ul>
 		</section>
+		<hr>
 
 		<section id="blogs" aria-labelledby="blogs-heading">
 			<h2 id="blogs-heading">Blogs</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et egestas est. Aliquam et leo tincidunt, ultricies
-				velit vel, rutrum augue. Sed finibus odio magna, id tincidunt eros fermentum eget. Donec eget orci sem. Ut quis
-				ligula vitae arcu ultricies molestie mattis congue urna. Fusce at maximus nisi. Sed ac metus cursus, ultricies
-				mi id, mollis diam. Morbi maximus risus id vestibulum pellentesque. Aenean facilisis commodo urna et auctor.
-				Duis imperdiet feugiat mollis. Morbi odio ligula, viverra et molestie quis, auctor at purus. Fusce elit massa,
-				ullamcorper nec posuere nec, tempor eget nulla. Fusce varius leo eu lectus vulputate, sed rhoncus lacus euismod.
-				Nunc finibus felis id fringilla consequat.
-
-				Donec ipsum turpis, ullamcorper quis nunc quis, cursus cursus turpis. Duis sit amet felis sapien. Mauris eu
-				turpis convallis, maximus odio pharetra, commodo augue. Duis a elit elit. Suspendisse a tellus tellus. Proin
-				eget vehicula risus, non porttitor dui. Cras dignissim sapien est, eleifend varius erat elementum sed.
-				Suspendisse potenti. Nullam finibus pretium tempus. Fusce pellentesque euismod tellus, ac lacinia risus pharetra
-				tristique. Curabitur eu massa faucibus, laoreet est eget, volutpat ligula.
-			</p>
+			<ul role="list" class="content-list">
+			</ul>
 		</section>
 	</main>
 
@@ -140,6 +186,33 @@
 			</ul>
 		</address>
 	</footer>
+</body>
+
+</html>
+</ul>
+</address>
+</footer>
+</body>
+
+</html>
+</ul>
+</address>
+</footer>
+</body>
+
+</html>
+</address>
+</footer>
+</body>
+
+</html>
+</address>
+</footer>
+</body>
+
+</html>
+</address>
+</footer>
 </body>
 
 </html>

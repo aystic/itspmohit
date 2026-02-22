@@ -21,7 +21,7 @@
 
 body {
 	/* 4. Add accessible line-height */
-	line-height: 1.5;
+	line-height: 1.75;
 	/* 5. Improve text rendering */
 	-webkit-font-smoothing: antialiased;
 }
@@ -101,7 +101,7 @@ h6 {
 		--link: #32cd32;
 		--link-visited: orange;
 		--link-hover: orange;
-		--border-color: #5c5c5c;
+		--border-color: #2e2e2e;
 		--scroll-btn-color: white;
 		--scroll-btn-bg-color: rgba(255, 255, 255, 0.15);
 		--scroll-btn-border-color: rgba(255, 255, 255, 0.3);
@@ -141,26 +141,24 @@ body {
 	align-content: center;
 	justify-content: center;
 	align-items: center;
-	padding: clamp(12px, 4vw, 40px);
-	width: min(100%, 70ch);
+	padding: clamp(20px, 4vw, 40px);
+	width: min(100%, 100ch);
 	transition: background-color 0.3s, color 0.3s;
 }
 
+
 h1 {
-	font-size: clamp(1.6rem, 4vw, 2.5rem);
+	font-size: 1.5rem;
 }
 
 h2 {
-	font-size: clamp(1.3rem, 3vw, 2rem);
+	font-size: 1.25rem;
+	text-decoration: underline;
 }
 
 h3 {
-	font-size: clamp(1.1rem, 2vw, 1.5rem);
-}
-
-p {
 	font-size: 1rem;
-	line-height: 1.7;
+	text-decoration: underline;
 }
 
 ul {
@@ -172,6 +170,69 @@ li {
 	list-style-type: none;
 }
 
+
+section {
+	margin: 24px 0;
+}
+
+article {
+	margin: 20px 0;
+	/* border: 1px solid var(--border-color); */
+	/* padding: 10px; */
+	/* border-radius: 2px; */
+}
+
+article header {
+	/* border: 1px solid var(--border-color); */
+	/* padding: 10px; */
+	/* border-radius: 2px; */
+	margin-bottom: 10px;
+
+}
+
+time {
+	text-align: right;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid var(--border-color);
+}
+
+
+.parent-row {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.col-1 {
+	flex: 2;
+}
+
+.col-2 {
+	flex: 2;
+}
+
+.content-list li {
+	list-style-type: circle;
+}
+
+.experience-header-list li {
+	list-style-type: none;
+}
+
+.work-info-list li {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+
 .navigation-list {
 	display: flex;
 	flex-direction: row;
@@ -181,17 +242,13 @@ li {
 	gap: 10px;
 }
 
-main {
-	padding: 20px 0;
-}
-
 #main-header {
 	padding-bottom: 10px;
 	border-bottom: 1px solid var(--border-color);
 }
 
 #main-footer {
-	padding-top: 10px;
+	padding: 10px 0;
 	border-top: 1px solid var(--border-color);
 }
 
@@ -230,7 +287,7 @@ main {
 
 .scroll-btns {
 	position: fixed;
-	bottom: 100px;
+	bottom: 70px;
 	right: 24px;
 	display: flex;
 	flex-direction: column;

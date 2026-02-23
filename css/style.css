@@ -253,7 +253,7 @@ section:target {
 }
 
 .content-list {
-	margin-left: 16px;
+	margin-left: 1rem;
 }
 
 .content-list li {
@@ -273,7 +273,7 @@ section:target {
 }
 
 ul.work-info-list {
-	margin: 18px;
+	margin-left: 1rem;
 }
 
 .work-info-list li {

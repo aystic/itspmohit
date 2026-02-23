@@ -271,17 +271,17 @@ section:target {
 
 
 
-#main-header {
+#header {
 	padding-bottom: 10px;
 	border-bottom: 1px solid var(--border-color);
 }
 
-#main-footer {
+#footer {
 	padding: 10px 0;
 	border-top: 1px solid var(--border-color);
 }
 
-#main-footer>p {
+#footer>p {
 	text-align: center;
 }
 

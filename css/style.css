@@ -218,6 +218,21 @@ hr {
 	flex: 2;
 }
 
+.technology-list {
+	display: flex;
+	gap: 4px 0;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.technology-list li+li::before {
+	content: "|";
+	padding: 0 8px;
+	opacity: 0.5;
+}
+
 .content-list li {
 	list-style-type: circle;
 }

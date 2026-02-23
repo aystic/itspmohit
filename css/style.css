@@ -92,6 +92,7 @@ h6 {
 	--scroll-btn-border-color: rgba(0, 0, 0, 0.3);
 	--scroll-btn-box-shadow: rgba(255, 255, 255, 0.15);
 	--scroll-btn-bg-color-hover: rgba(0, 0, 0, 0.25);
+	--heading-bg-color: rgba(0, 0, 0, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -107,6 +108,7 @@ h6 {
 		--scroll-btn-border-color: rgba(255, 255, 255, 0.3);
 		--scroll-btn-box-shadow: rgba(0, 0, 0, 0.15);
 		--scroll-btn-bg-color-hover: rgba(255, 255, 255, 0.25);
+		--heading-bg-color: rgba(255, 255, 255, 0.05);
 	}
 }
 
@@ -182,22 +184,30 @@ article {
 }
 
 article header {
-	/* border: 1px solid var(--border-color); */
-	/* padding: 10px; */
-	/* border-radius: 2px; */
 	margin-bottom: 10px;
-
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	padding: 4px 10px;
+	background-color: var(--heading-bg-color);
 }
 
 time {
 	text-align: right;
 }
 
+/* hr { */
+/* 	border: 0; */
+/* 	border-bottom: 1px solid var(--border-color); */
+/* } */
 hr {
-	border: 0;
-	border-bottom: 1px solid var(--border-color);
+	border: none;
+	border-top: 1px solid var(--border-color);
+	margin: 2rem 0;
 }
 
+section:target {
+	scroll-margin-top: 40px;
+}
 
 .parent-row {
 	display: flex;
@@ -216,6 +226,15 @@ hr {
 
 .col-2 {
 	flex: 2;
+}
+
+.navigation-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 .technology-list {
@@ -251,14 +270,6 @@ hr {
 }
 
 
-.navigation-list {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-}
 
 #main-header {
 	padding-bottom: 10px;
@@ -272,6 +283,10 @@ hr {
 
 #main-footer>p {
 	text-align: center;
+}
+
+.align-right {
+	text-align: right;
 }
 
 .footer-container {
@@ -289,7 +304,7 @@ hr {
 	border: 1px solid var(--border-color);
 }
 
-.handshake {
+.hello {
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -325,7 +340,7 @@ hr {
 	color: var(--scroll-btn-color);
 	background-color: var(--scroll-btn-bg-color);
 	backdrop-filter: blur(12px) saturate(180%);
-	-webkit-backdrop-filter: blur(12px) saturate(180%);
+	-webkit-backdrop-filter: blur(6px) saturate(180%);
 	border: 1px solid var(--scroll-btn-border-color);
 	box-shadow: 0 4px 16px var(--scroll-btn-box-shadow);
 	-webkit-tap-highlight-color: transparent;
@@ -337,6 +352,11 @@ hr {
 
 .scroll-btns a:hover {
 	background-color: var(--scroll-btn-bg-color-hover);
+}
+
+.highlight {
+	background-color: #ffa500;
+	color: black;
 }
 
 /* hover for desktop only */

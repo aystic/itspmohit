@@ -359,9 +359,42 @@ section:target {
 	color: black;
 }
 
+#print-btn-parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#print-btn {
+	color: var(--link);
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+
 /* hover for desktop only */
 @media (hover: hover) {
 	.scroll-btns a:hover {
 		transform: scale(1.1);
 	}
+
+}
+
+@media print {
+
+	@page {
+		margin: 1.5cm 2cm;
+		size: A4;
+	}
+
+	.scroll-btns {
+		display: none;
+	}
+
+	#print-btn {
+		display: none;
+	}
+
 }

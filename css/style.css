@@ -92,7 +92,8 @@ h6 {
 	--scroll-btn-border-color: rgba(0, 0, 0, 0.3);
 	--scroll-btn-box-shadow: rgba(255, 255, 255, 0.15);
 	--scroll-btn-bg-color-hover: rgba(0, 0, 0, 0.25);
-	--heading-bg-color: rgba(0, 0, 0, 0.075)
+	--heading-bg-color: rgba(0, 0, 0, 0.075);
+	--details-bg-color: rgba(0, 0, 0, 0.025);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -109,6 +110,7 @@ h6 {
 		--scroll-btn-box-shadow: rgba(0, 0, 0, 0.15);
 		--scroll-btn-bg-color-hover: rgba(255, 255, 255, 0.25);
 		--heading-bg-color: rgba(255, 255, 255, 0.075);
+		--details-bg-color: rgba(255, 255, 255, 0.025);
 	}
 }
 
@@ -159,6 +161,10 @@ h2 {
 }
 
 h3 {
+	font-size: 1rem;
+}
+
+h4 {
 	font-size: 1rem;
 }
 
@@ -391,6 +397,26 @@ ul.work-info-list {
 		transform: scale(1.1);
 	}
 
+}
+
+details {
+	cursor: pointer;
+	margin: 10px 0px;
+	background: var(--details-bg-color);
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	padding: 0px 8px;
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+details:open {
+	background: var(--details-bg-color);
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	padding: 0px 8px;
 }
 
 @media print {

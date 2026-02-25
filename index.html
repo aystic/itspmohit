@@ -32,7 +32,9 @@
 				<li><a href="mailto:itspmohit@gmail.com?subject=Let%27s%20Build%20Something%20Interesting" target="_blank"
 						rel="noopener noreferrer">Contact Me</a></li>
 				<li id="print-btn-parent">
-					<button id="print-btn" onclick="window.print()" aria-label="Print page" title="Print">
+					<button id="print-btn"
+						onclick="document.querySelectorAll('details.work-details').forEach(d => { d.dataset.wasOpen = d.open; d.open = true; });  window.print()"
+						aria-label="Print page" title="Print">
 						<svg viewBox="64 64 896 896" focusable="false" data-icon="printer" width="1em" height="1em"
 							fill="currentColor" aria-hidden="true">
 							<path
@@ -118,40 +120,92 @@
 								<time datetime="2023-08/2025-09" class="col-2 align-right">08/23–09/25</time>
 							</div>
 							<div class="role row">
-								<p class="col-1">Founding Engineer</p>
+								<p class="col-1">Founding Software Engineer (Sole Engineer)</p>
 							</div>
 						</header>
-						<ul role="list" aria-label="Relevant Work" class="work-info-list">
-							<li>Architected and built a rule-driven automation engine supporting multi-channel messaging
-								(Email,
-								Slack, SMS, Teams) with asynchronous processing via Sidekiq, implementing retries,
-								priority queues, and
-								throttling for reliability under burst traffic.</li>
-							<li>Optimized high-volume employee filtering and journey assignment workflows, improving API
-								response
-								times by 50–300x and enabling smooth handling of 10k+ records per request.</li>
-							<li>Designed analytics pipeline for tracking opens, clicks, and engagement aggregation using
-								event-driven
-								models and background jobs, enabling near real-time insights across journeys.</li>
-							<li>Rewrote third-party integrations (Slack, Gmail, Outlook, HRIS) using OAuth authorization
-								code flows,
-								token refresh logic, scheduled validation, and webhook handling; reduced
-								integration-related failures by
-								~80%.</li>
-							<li>Implemented rate limiting (leaky bucket algorithm) and background job throttling to
-								prevent API abuse
-								and ensure system stability under concurrent workloads.</li>
-							<li>Refactored approval/unapproval and bulk operations to non-blocking asynchronous flows,
-								reducing
-								request latency and eliminating race conditions in state transitions.</li>
-							<li>Designed timezone-safe rule scheduling and rescheduling logic to handle employee data
-								changes and
-								distributed execution without duplicate triggers.</li>
-							<li>Owned production infrastructure on AWS Elastic Beanstalk with Docker, resolving Nginx
-								port binding,
-								SSL configuration, worker graceful shutdown, and environment-specific deployment
-								automation.</li>
-						</ul>
+						<p class="work-summary">
+							As the first and only engineer at an early-stage startup, I took over a struggling, agency-built MVP and
+							transformed it into a scalable B2B platform that was eventually acquired by ClayHR. I acted as the
+							architect, developer, site reliability engineer and DevOps lead to turn this into a stable,
+							acquisition-ready product. My role required extreme adaptability, moving between deep architectural work
+							and rapid feature delivery to meet the demands of our first B2B customers.
+						</p>
+						<details class="work-details">
+							<summary>View detailed work</summary>
+
+							<section class="work-category" aria-labelledby="Technical Adaptability">
+								<h4 id="Technical Adaptability">Technical Adaptability</h4>
+								<ul role="list" class="work-info-list">
+									<li>
+										I had never used Ruby on Rails before joining. Within weeks, I was shipping critical bug fixes and
+										refactoring the core architecture. This experience taught me how to dive into complex, undocumented
+										systems and become productive immediately.
+									</li>
+								</ul>
+							</section>
+
+							<section class="work-category" aria-labelledby="Technical Leadership & Product Delivery">
+								<h4 id="Technical Leadership & Product Delivery">Technical Leadership & Product Delivery</h4>
+								<ul role="list" class="work-info-list">
+									<li>
+										End-to-End Development: Owned the full lifecycle of the product, from designing the
+										interactive Frontend (React/Redux) to architecting the Backend (Ruby on Rails).
+									</li>
+									<li>
+										The "Journey" Engine: Built the core product—a flexible automation engine allowing HR teams to
+										create complex employee "journeys" triggered by dynamic rules (e.g., birthdays, anniversaries, or
+										HRIS data changes).
+									</li>
+									<li>
+										Third-Party Ecosystem: Implemented deep integrations with Slack (interactive messages and
+										channel syncing), Twilio (SMS automation), and SendGrid/Outlook/Gmail (tracking opens and clicks).
+									</li>
+									<li>
+										The analytics suite: Designed analytics pipeline for tracking opens, clicks, and engagement
+										aggregation using event-driven models and background jobs, enabling near real-time insights across
+										journeys.
+									</li>
+								</ul>
+							</section>
+							<section class="work-category" aria-labelledby="Performance & Reliability">
+								<h4 id="Performance & Reliability">Performance & Reliability</h4>
+								<ul role="list" class="work-info-list">
+									<li>
+										Massive Scalability Gains: When the platform faced bottlenecks with complex filtering conditions for
+										employees, I refactored the
+										data layer to improve journey list response times by 300x and auto-add field fetching by 20x.
+									</li>
+									<li>
+										System Stability: To ensure reliability under load, I implemented a leaky bucket rate-limiting
+										algorithm for incoming webhooks and added background job throttling for external APIs
+									</li>
+								</ul>
+							</section>
+							<section class="work-category" aria-labelledby="DevOps & Infrastructure">
+								<h4 id="DevOps & Infrastructure">DevOps & Infrastructure</h4>
+								<ul role="list" class="work-info-list">
+									<li>
+										Cost-Efficiency: Conducted a total audit of the AWS environment. By migrating deprecated RDS
+										instances and right-sizing instances, I cut the infrastructure bill in half while increasing
+										overall system performance.
+									</li>
+									<li>
+										Modernization: Dockerized the legacy application to solve "it works on my machine" issues and
+										transitioned the team to AWS Elastic Beanstalk with zero-downtime rolling updates.
+									</li>
+								</ul>
+							</section>
+							<section class="work-category" aria-labelledby="Acquisition & Transition">
+								<h4 id="Acquisition & Transition">Acquisition & Transition</h4>
+								<ul role="list" class="work-info-list">
+									<li>
+										My work directly contributed to the company's acquisition by ClayHR. Post-acquisition, I was offered
+										a Full-Time Equivalent (FTE) position to lead the transition but chose to pursue new challenges as a
+										generalist engineer.
+									</li>
+								</ul>
+							</section>
+						</details>
 					</article>
 				</li>
 				<li>
@@ -165,6 +219,23 @@
 								<p class="col-1">Full Stack Developer Intern</p>
 							</div>
 						</header>
+						<!-- <p class="work-summary"> -->
+						<!-- </p> -->
+						<!-- <details class="work-details"> -->
+						<!-- 	<summary>View detailed work</summary> -->
+						<!---->
+						<!-- 	<section class="work-category" aria-labelledby="Technical Leadership & Product Delivery"> -->
+						<!-- 		<h4 id="Technical Leadership & Product Delivery">Technical Leadership & Product Delivery</h4> -->
+						<!-- 		<ul role="list" class="work-info-list"> -->
+						<!-- 			<li> -->
+						<!-- 			</li> -->
+						<!-- 			<li> -->
+						<!-- 			</li> -->
+						<!-- 			<li> -->
+						<!-- 			</li> -->
+						<!-- 		</ul> -->
+						<!-- 	</section> -->
+						<!-- </details> -->
 					</article>
 				</li>
 				<li>

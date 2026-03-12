@@ -1,369 +1,508 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Mohit Pathak — Backend Software Engineer</title>
-  <meta name="description"
-    content="Mohit Pathak is a Backend Software Engineer with 2.5 years of experience in Go, Ruby on Rails, PostgreSQL, AWS, and Docker. Based in India.">
-  <meta name="keywords"
-    content="Mohit Pathak, Backend Engineer, Software Engineer, Go, Golang, Ruby on Rails, PostgreSQL, Docker, AWS, Linux, India">
-  <meta name="author" content="Mohit Pathak">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://aystic.github.io">
-
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Mohit Pathak — Backend Software Engineer">
-  <meta property="og:description"
-    content="Backend Software Engineer with 2.5 years of experience in Go, Ruby on Rails, PostgreSQL, AWS, and Docker.">
-  <meta property="og:url" content="https://aystic.github.io">
-  <meta property="og:image" content="https://aystic.github.io/static/MohitPathak.webp">
-  <meta property="og:image:alt" content="Mohit Pathak profile picture">
-  <meta property="og:locale" content="en_IN">
-  <meta property="profile:first_name" content="Mohit">
-  <meta property="profile:last_name" content="Pathak">
-
-  <!-- ── Twitter/X Card ── -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Mohit Pathak — Backend Software Engineer">
-  <meta name="twitter:description"
-    content="Backend Software Engineer with 2.5 years of experience in Go, Ruby on Rails, PostgreSQL, AWS, and Docker.">
-  <meta name="twitter:image" content="https://aystic.github.io/static/MohitPathak.webp">
-  <meta name="twitter:image:alt" content="Mohit Pathak profile picture">
-
-  <!-- ── Structured Data (JSON-LD) ── -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mohit Pathak",
-    "jobTitle": "Software Engineer",
-    "description": "Backend Software Engineer with 2.5 years of experience in Go, Ruby on Rails, PostgreSQL, AWS, and Docker.",
-    "url": "https://aystic.github.io",
-    "image": "https://aystic.github.io/static/MohitPathak.webp",
-    "email": "itspmohit@gmail.com",
-    "nationality": "IN",
-    "knowsAbout": ["Go", "Ruby on Rails", "PostgreSQL", "Docker", "AWS", "Linux", "Python"],
-    "sameAs": [
-      "https://linkedin.com/in/itspmohit",
-      "https://github.com/aystic"
-    ]
-  }
-  </script>
-
-
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="static/favicon/favicon.ico" sizes="any">
-  <link rel="icon" type="image/webp" sizes="32x32" href="static/favicon/favicon-32x32.webp">
-  <link rel="icon" type="image/webp" sizes="16x16" href="static/favicon/favicon-16x16.webp">
-  <link rel="apple-touch-icon" href="static/favicon/apple-touch-icon.webp">
-  <link rel="manifest" href="static/favicon/site.webmanifest">
-</head>
-
-
-<body>
-  <header id="header">
-    <nav aria-label="Main navigation">
-      <ul role="list" class="navigation-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about-me">About</a></li>
-        <li><a href="#education-and-experience">Education &amp; Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="https://bit.ly/pmohit-resume" target="_blank" rel="noopener noreferrer">Resume</a></li>
-        <li><a href="mailto:itspmohit@gmail.com?subject=Let%27s%20Build%20Something%20Interesting" target="_blank"
-            rel="noopener noreferrer">Contact Me</a></li>
-        <li id="print-btn-parent">
-          <button id="print-btn"
-            onclick="document.querySelectorAll('details.work-details').forEach(d => { d.dataset.wasOpen = d.open; d.open = true; });  window.print()"
-            aria-label="Print page" title="Print">
-            <svg viewBox="64 64 896 896" focusable="false" data-icon="printer" width="1em" height="1em"
-              fill="currentColor" aria-hidden="true">
-              <path
-                d="M732 120c0-4.4-3.6-8-8-8H300c-4.4 0-8 3.6-8 8v148h440V120zm120 212H172c-44.2 0-80 35.8-80 80v328c0 17.7 14.3 32 32 32h168v132c0 4.4 3.6 8 8 8h424c4.4 0 8-3.6 8-8V772h168c17.7 0 32-14.3 32-32V412c0-44.2-35.8-80-80-80zM664 844H360V568h304v276zm164-360c0 4.4-3.6 8-8 8h-40c-4.4 0-8-3.6-8-8v-40c0-4.4 3.6-8 8-8h40c4.4 0 8 3.6 8 8v40z">
-              </path>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="scroll-btns" aria-label="Page navigation">
-      <a href="#header" title="Go to top" aria-label="Go to top">↑</a>
-      <a href="#footer" title="Go to bottom" aria-label="Go to bottom">↓</a>
-    </div>
-
-    <section class="hello" aria-label="Profile introduction">
-      <img src="static/MohitPathak.webp" id="profile-picture" alt="Mohit Pathak profile picture" height="200px"
-        width="200px" />
-      <div class="designation">
-        <p><strong>Mohit Pathak</strong></p>
-        <p><strong>Software Engineer (Backend)</strong></p>
-        <ul role="list" class="technology-list">
-          <li>Go</li>
-          <li>Python</li>
-          <li>Ruby</li>
-          <li>Rails</li>
-          <li>PostgreSQL</li>
-          <li>Linux</li>
-          <li>AWS</li>
-          <li>Docker</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mohit Pathak — Backend Software Engineer</title>
+    <meta
+      name="description"
+      content="Mohit Pathak is a Backend Software Engineer with 2.5 years of experience in Go, Ruby on Rails, PostgreSQL, AWS, and Docker. Based in India."
+    />
+    <meta
+      name="keywords"
+      content="Mohit Pathak, Backend Engineer, Software Engineer, Go, Golang, Ruby on Rails, PostgreSQL, Docker, AWS, Linux, India"
+    />
+    <meta name="author" content="Mohit Pathak" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://aystic.github.io" />
+    <meta property="og:type" content="profile" />
+    <meta
+      property="og:title"
+      content="Mohit Pathak — Backend Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Backend Software Engineer with 2.5 years of experience in Go, Ruby on Rails, PostgreSQL, AWS, and Docker."
+    />
+    <meta property="og:url" content="https://aystic.github.io" />
+    <meta
+      property="og:image"
+      content="https://aystic.github.io/static/MohitPathak.webp"
+    />
+    <meta property="og:image:alt" content="Mohit Pathak profile picture" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="profile:first_name" content="Mohit" />
+    <meta property="profile:last_name" content="Pathak" />
+    <!-- ── Twitter/X Card ── -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Mohit Pathak — Backend Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Backend Software Engineer with 2.5 years of experience in Go, Ruby on Rails, PostgreSQL, AWS, and Docker."
+    />
+    <meta
+      name="twitter:image"
+      content="https://aystic.github.io/static/MohitPathak.webp"
+    />
+    <meta name="twitter:image:alt" content="Mohit Pathak profile picture" />
+    <!-- ── Structured Data (JSON-LD) ── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohit Pathak",
+        "jobTitle": "Software Engineer",
+        "description": "Backend Software Engineer with 2.5 years of experience in Go, Ruby on Rails, PostgreSQL, AWS, and Docker.",
+        "url": "https://aystic.github.io",
+        "image": "https://aystic.github.io/static/MohitPathak.webp",
+        "email": "itspmohit@gmail.com",
+        "nationality": "IN",
+        "knowsAbout": [
+          "Go",
+          "Ruby on Rails",
+          "PostgreSQL",
+          "Docker",
+          "AWS",
+          "Linux",
+          "Python"
+        ],
+        "sameAs": [
+          "https://linkedin.com/in/itspmohit",
+          "https://github.com/aystic"
+        ]
+      }
+    </script>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="static/favicon/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="32x32"
+      href="static/favicon/favicon-32x32.webp"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="16x16"
+      href="static/favicon/favicon-16x16.webp"
+    />
+    <link rel="apple-touch-icon" href="static/favicon/apple-touch-icon.webp" />
+    <link rel="manifest" href="static/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header id="header">
+      <nav aria-label="Main navigation">
+        <ul role="list" class="navigation-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li>
+            <a href="#education-and-experience">Education &amp; Experience</a>
+          </li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li>
+            <a
+              href="https://bit.ly/pmohit-resume"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:itspmohit@gmail.com?subject=Let%27s%20Build%20Something%20Interesting"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact Me</a
+            >
+          </li>
+          <li id="print-btn-parent">
+            <button
+              id="print-btn"
+              onclick="
+                document
+                  .querySelectorAll('details.work-details')
+                  .forEach((d) => {
+                    d.dataset.wasOpen = d.open;
+                    d.open = true;
+                  });
+                window.print();
+              "
+              aria-label="Print page"
+              title="Print"
+            >
+              <svg
+                viewBox="64 64 896 896"
+                focusable="false"
+                data-icon="printer"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M732 120c0-4.4-3.6-8-8-8H300c-4.4 0-8 3.6-8 8v148h440V120zm120 212H172c-44.2 0-80 35.8-80 80v328c0 17.7 14.3 32 32 32h168v132c0 4.4 3.6 8 8 8h424c4.4 0 8-3.6 8-8V772h168c17.7 0 32-14.3 32-32V412c0-44.2-35.8-80-80-80zM664 844H360V568h304v276zm164-360c0 4.4-3.6 8-8 8h-40c-4.4 0-8-3.6-8-8v-40c0-4.4 3.6-8 8-8h40c4.4 0 8 3.6 8 8v40z"
+                ></path>
+              </svg>
+            </button>
+          </li>
         </ul>
-        <p>India</p>
+      </nav>
+      <div class="scroll-btns" aria-label="Page navigation">
+        <a href="#header" title="Go to top" aria-label="Go to top">↑</a>
+        <a href="#footer" title="Go to bottom" aria-label="Go to bottom">↓</a>
       </div>
-    </section>
-  </header>
-
-
-
-
-  <main>
-    <section id="about-me" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <ul role="list" class="content-list">
-        <li>
-          I am a Computer Engineering graduate (Class of 2023, J.C. Bose UST) who took the deep end of the pool
-          immediately after graduation. As the sole founding engineer at a high-stakes startup, I spent two years
-          transforming a bug-riddled MVP into a stable, performant platform that was ultimately acquired by ClayHR.
-        </li>
-        <li>
-          My technical foundation is built on Go, Ruby on Rails, React, and AWS, but my real specialty is technical
-          resilience. I learned Rails on the fly to salvage a legacy system.
-        </li>
-        <li>
-          My obsession with "how things work" started with a simple HTML site and peaked when I discovered GNU/Linux.
-          After years of distro-hopping and tinkering, I’ve settled on Fedora as my daily driver.
-        </li>
-        <li>
-          When I’m not diving deep into technical documentation or reading personal development books, you’ll find me
-          outside. I’m a firm believer in "unplugging" to stay sharp, whether that’s spending time in nature or chasing
-          lean angles and carving corners on my motorcycle in the twisties.
-        </li>
-      </ul>
-    </section>
-    <hr>
-
-    <section id="education-and-experience" aria-labelledby="edu-heading">
-      <h2 id="edu-heading">Education &amp; Experience</h2>
-      <ul role="list" class="content-list organization-list">
-        <li>
-          <article aria-labelledby="fte-job1">
-            <header class="parent-row">
-              <div class="organization row">
-                <h3 id="fte-job1" class="col-1">Squadsy (Acquired by ClayHR)</h3>
-                <time datetime="2023-08/2025-09" class="col-2 align-right">08/23–09/25</time>
-              </div>
-              <div class="role row">
-                <p class="col-1">Founding Software Engineer</p>
-              </div>
-            </header>
-            <p class="work-summary">
-              In August 2023, I joined an early-stage startup as the sole engineer. I inherited an agency-built MVP that
-              was technically insolvent: it had 0% test coverage, ran on deprecated dependencies, and was plagued by
-              frequent production crashes. Over the next two years, I acted as the Architect, Lead Developer, and DevOps
-              Engineer, transforming a "black box" codebase into a high-performance B2B platform that was successfully
-              acquired by ClayHR.
-            </p>
-            <details class="work-details">
-              <summary>View detailed work</summary>
-
-              <section class="work-category" aria-labelledby="The Technical Rescue: Zero to Production">
-                <h4 id="The Technical Rescue: Zero to Production">The Technical Rescue: Zero to Production</h4>
-                <p>When I started, I had never used Ruby on Rails. Within weeks, I had self-taught the framework,
-                  stabilized the existing features, and began shipping critical updates. I transitioned the company from
-                  a "firefighting" culture to a stable, scalable engineering environment by:</p>
-                <ul role="list" class="work-info-list">
-                  <li>
-                    <b>Dockerizing the Environment:</b> I containerized the legacy stack to eliminate environment parity
-                    issues
-                    and created a repeatable, reliable build process.
-                  </li>
-                  <li>
-                    <b>Proactive Observability:</b> I implemented a centralized error-handling suite using Bugsnag and
-                    Slack,
-                    building a real-time alerting pipeline that allowed us to resolve production issues before they
-                    impacted our enterprise clients.
-                  </li>
-                </ul>
-              </section>
-
-              <section class="work-category" aria-labelledby="Core Product: The Automation & Analytics Engine">
-                <h4 id="Core Product: The Automation & Analytics Engine">Core Product: The Automation & Analytics Engine
-                </h4>
-                I owned the full lifecycle of our core product features, ensuring they were robust enough for enterprise
-                HR departments.
-                <ul role="list" class="work-info-list">
-                  <li>
-                    <b>The "Journey" Builder:</b> Architected a flexible automation engine that allowed HR leaders to
-                    trigger
-                    complex employee workflows based on dynamic HRIS data (birthdays, tenure, or role changes).
-                  </li>
-                  <li>
-                    <b>Enterprise Integrations:</b> Overhauled our OAuth 2.0 flows and built an event-driven ingestion
-                    pipeline
-                    for bulk HRIS data. This ensured secure, high-speed syncing with third-party platforms like Slack,
-                    Twilio, and Merge.dev.
-                  </li>
-                  <li>
-                    <b>Business Intelligence Suite:</b> I designed a proprietary analytics engine from scratch. It
-                    didn’t just
-                    track opens and clicks; I engineered a custom query layer that allowed users to perform
-                    multi-dimensional segmentation—filtering engagement trends by department, job role, and location to
-                    derive actual employee sentiment.
-                  </li>
-                </ul>
-              </section>
-
-              <section class="work-category" aria-labelledby="Performance Engineering at Scale">
-                <h4 id="Performance Engineering at Scale">Performance Engineering at Scale</h4>
-                <p>As our B2B client base grew, the initial architecture hit a ceiling. I led a deep-dive refactoring of
-                  the data layer to support enterprise-grade datasets:</p>
-                <ul role="list" class="work-info-list">
-                  <li>
-                    <b>300x Latency Reduction:</b>By optimizing SQL generation and implementing advanced indexing, I
-                    reduced
-                    response times for high-load filtering queries by 300x.
-                  </li>
-                  <li>
-                    <b>Baseline Improvements:</b> Achieved a 20x speed increase across general system queries, ensuring
-                    a
-                    lag-free experience for managers handling 10,000+ employee records.
-                  </li>
-                  <li>
-                    <b>Reliability:</b> Implemented a leaky-bucket rate-limiting algorithm and background job throttling
-                    to
-                    protect our infrastructure from external API spikes and webhook floods.
-                  </li>
-                </ul>
-              </section>
-              <section class="work-category" aria-labelledby="DevOps & Infrastructure">
-                <h4 id="DevOps & Infrastructure">DevOps & Infrastructure</h4>
-                <p>I managed the company’s entire AWS footprint, treating infrastructure as a first-class citizen:</p>
-                <ul role="list" class="work-info-list">
-                  <li>
-                    <b>50% Cost Reduction:</b> Conducted a comprehensive audit of our cloud spend. By migrating
-                    deprecated RDS
-                    instances and right-sizing our EC2 fleet, I slashed the monthly infrastructure bill by half while
-                    simultaneously improving system throughput.
-                  </li>
-                  <li>
-                    <b>Zero-Downtime Deployments:</b> Migrated the stack to AWS Elastic Beanstalk with rolling updates.
-                    I
-                    implemented graceful shutdown protocols to ensure that no background jobs or data transactions were
-                    lost during deployments.
-                  </li>
-                </ul>
-              </section>
-              <section class="work-category" aria-labelledby="Acquisition & Transition">
-                <h4 id="Acquisition & Transition">Acquisition & Transition</h4>
-                <ul role="list" class="work-info-list">
-                  <li>
-                    My work directly contributed to the company's acquisition by ClayHR. I was
-                    offered
-                    a Full-Time Equivalent (FTE) position to lead the transition but chose to pursue new challenges as a
-                    generalist engineer.
-                  </li>
-                </ul>
-              </section>
-            </details>
-          </article>
-        </li>
-        <li>
-          <article aria-labelledby="internship-2">
-            <header class="parent-row">
-              <div class="organization row">
-                <h3 id="internship-2" class="col-1">Squadsy</h3>
-                <time datetime="2023-01/2023-08" class="col-2 align-right">01/23–08/23</time>
-              </div>
-              <div class="role row">
-                <p class="col-1">Full Stack Developer Intern</p>
-              </div>
-            </header>
-            <!-- <p class="work-summary"> -->
-            <!-- </p> -->
-            <!-- <details class="work-details"> -->
-            <!-- 	<summary>View detailed work</summary> -->
-            <!---->
-            <!-- 	<section class="work-category" aria-labelledby="Technical Leadership & Product Delivery"> -->
-            <!-- 		<h4 id="Technical Leadership & Product Delivery">Technical Leadership & Product Delivery</h4> -->
-            <!-- 		<ul role="list" class="work-info-list"> -->
-            <!-- 			<li> -->
-            <!-- 			</li> -->
-            <!-- 			<li> -->
-            <!-- 			</li> -->
-            <!-- 			<li> -->
-            <!-- 			</li> -->
-            <!-- 		</ul> -->
-            <!-- 	</section> -->
-            <!-- </details> -->
-          </article>
-        </li>
-        <li>
-          <article aria-labelledby="internship-1">
-            <header class="parent-row">
-              <div class="organization row">
-                <h3 id="internship-1" class="col-1">Flywheel (Acquired by Sylva)</h3>
-                <time datetime="2022-04/2022-09" class="col-2 align-right">04/22–09/22</time>
-              </div>
-              <div class="role row">
-                <p class="col-1">Full Stack Developer Intern</p>
-              </div>
-            </header>
-          </article>
-        </li>
-        <li>
-          <article aria-labelledby="btech-degree">
-            <header class="parent-row">
-              <div class="institution-row row">
-                <h3 id="btech-degree" class="col-1">J.C Bose UST, YMCA, Faridabad
-                </h3>
-                <time datetime="2019-08/2023-08" class="col-2 align-right">08/19–08/23</time>
-              </div>
-              <div class="degree-row row">
-                <p class="col-1">B.Tech CSE</p>
-                <p class="col-2 align-right">CGPA: <strong>8.62</strong>/10.00</p>
-              </div>
-            </header>
-          </article>
-        </li>
-      </ul>
-    </section>
-    <hr>
-
-    <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
-      <ul role="list" class="content-list">
-      </ul>
-    </section>
-    <hr>
-
-    <section id="blogs" aria-labelledby="blogs-heading">
-      <h2 id="blogs-heading">Blogs</h2>
-      <ul role="list" class="content-list">
-      </ul>
-    </section>
-  </main>
-
-  <footer id="footer">
-    <p id="copyright-text">
-      <small>Copyright &copy; 2026. All Rights Reserved.</small>
-    </p>
-    <address>
-      <ul role="list" class="footer-container">
-        <li><a target="_blank" href="https://linkedin.com/in/itspmohit" rel="noopener noreferrer">LinkedIn</a>
-        </li>
-        <li><a target="_blank" href="https://github.com/aystic" rel="noopener noreferrer">GitHub</a></li>
-        <li><a target="_blank" href="https://github.com/aystic.gpg" rel="noopener noreferrer">GPG Key</a></li>
-      </ul>
-    </address>
-  </footer>
-</body>
-
+      <section class="hello" aria-label="Profile introduction">
+        <img
+          src="static/MohitPathak.webp"
+          id="profile-picture"
+          alt="Mohit Pathak profile picture"
+          height="200px"
+          width="200px"
+        />
+        <div class="designation">
+          <p><strong>Mohit Pathak</strong></p>
+          <p><strong>Software Engineer (Backend)</strong></p>
+          <ul role="list" class="technology-list">
+            <li>Go</li>
+            <li>Ruby on Rails</li>
+            <li>Python</li>
+            <li>React.JS</li>
+            <li>PostgreSQL</li>
+            <li>GNU/Linux</li>
+            <li>AWS</li>
+          </ul>
+          <p>India</p>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="about-me" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <ul role="list" class="content-list">
+          <li>
+            I am a Computer Engineering graduate (Class of 2023, J.C. Bose UST)
+            who took the deep end of the pool immediately after graduation. As
+            the sole founding engineer at a high-stakes startup, I spent two
+            years transforming a bug-riddled MVP into a stable, performant
+            platform that was ultimately acquired by ClayHR.
+          </li>
+          <li>
+            My technical foundation is built on Go, Ruby on Rails, Python,
+            React.JS, PostgreSQL, GNU/Linux and AWS, but my real specialty is
+            technical resilience. I learned Rails on the fly to salvage a legacy
+            system.
+          </li>
+          <li>
+            My obsession with "how things work" started with a simple HTML site
+            and peaked when I discovered GNU/Linux. After years of
+            distro-hopping and tinkering, I’ve settled on Fedora as my daily
+            driver.
+          </li>
+          <li>
+            When I’m not diving deep into technical documentation or reading
+            personal development books, you’ll find me outside. I’m a firm
+            believer in "unplugging" to stay sharp, whether that’s spending time
+            in nature or chasing lean angles and carving corners on my
+            motorcycle in the twisties.
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section id="education-and-experience" aria-labelledby="edu-heading">
+        <h2 id="edu-heading">Education &amp; Experience</h2>
+        <ul role="list" class="content-list organization-list">
+          <li>
+            <article aria-labelledby="fte-job1">
+              <header class="parent-row">
+                <div class="organization row">
+                  <h3 id="fte-job1" class="col-1">
+                    Squadsy (Acquired by ClayHR)
+                  </h3>
+                  <time datetime="2023-08/2025-09" class="col-2 align-right"
+                    >08/23–09/25</time
+                  >
+                </div>
+                <div class="role row">
+                  <p class="col-1">Founding Software Engineer</p>
+                </div>
+              </header>
+              <p class="work-summary">
+                In August 2023, I joined an early-stage startup as the sole
+                engineer. I inherited an agency-built MVP that was technically
+                insolvent: it had 0% test coverage, ran on deprecated
+                dependencies, and was plagued by frequent production crashes.
+                Over the next two years, I acted as the Architect, Lead
+                Developer, and DevOps Engineer, transforming a "black box"
+                codebase into a high-performance B2B platform that was
+                successfully acquired by ClayHR.
+              </p>
+              <details class="work-details">
+                <summary>View detailed work</summary>
+                <section
+                  class="work-category"
+                  aria-labelledby="The Technical Rescue: Zero to Production"
+                >
+                  <h4 id="The Technical Rescue: Zero to Production">
+                    The Technical Rescue: Zero to Production
+                  </h4>
+                  <p>
+                    When I started, I had never used Ruby on Rails. Within
+                    weeks, I had self-taught the framework, stabilized the
+                    existing features, and began shipping critical updates. I
+                    transitioned the company from a "firefighting" culture to a
+                    stable, scalable engineering environment by:
+                  </p>
+                  <ul role="list" class="work-info-list">
+                    <li>
+                      <b>Dockerizing the Environment:</b> I containerized the
+                      legacy stack to eliminate environment parity issues and
+                      created a repeatable, reliable build process.
+                    </li>
+                    <li>
+                      <b>Proactive Observability:</b> I implemented a
+                      centralized error-handling suite using Bugsnag and Slack,
+                      building a real-time alerting pipeline that allowed us to
+                      resolve production issues before they impacted our
+                      enterprise clients.
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="work-category"
+                  aria-labelledby="Core Product: The Automation & Analytics Engine"
+                >
+                  <h4 id="Core Product: The Automation & Analytics Engine">
+                    Core Product: The Automation & Analytics Engine
+                  </h4>
+                  I owned the full lifecycle of our core product features,
+                  ensuring they were robust enough for enterprise HR
+                  departments.
+                  <ul role="list" class="work-info-list">
+                    <li>
+                      <b>The "Journey" Builder:</b> Architected a flexible
+                      automation engine that allowed HR leaders to trigger
+                      complex employee workflows based on dynamic HRIS data
+                      (birthdays, tenure, or role changes).
+                    </li>
+                    <li>
+                      <b>Enterprise Integrations:</b> Overhauled our OAuth 2.0
+                      flows and built an event-driven ingestion pipeline for
+                      bulk HRIS data. This ensured secure, high-speed syncing
+                      with third-party platforms like Slack, Twilio, and
+                      Merge.dev.
+                    </li>
+                    <li>
+                      <b>Business Intelligence Suite:</b> I designed a
+                      proprietary analytics engine from scratch. It didn’t just
+                      track opens and clicks; I engineered a custom query layer
+                      that allowed users to perform multi-dimensional
+                      segmentation—filtering engagement trends by department,
+                      job role, and location to derive actual employee
+                      sentiment.
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="work-category"
+                  aria-labelledby="Performance Engineering at Scale"
+                >
+                  <h4 id="Performance Engineering at Scale">
+                    Performance Engineering at Scale
+                  </h4>
+                  <p>
+                    As our B2B client base grew, the initial architecture hit a
+                    ceiling. I led a deep-dive refactoring of the data layer to
+                    support enterprise-grade datasets:
+                  </p>
+                  <ul role="list" class="work-info-list">
+                    <li>
+                      <b>300x Latency Reduction:</b> By optimizing SQL
+                      generation and implementing advanced indexing, I reduced
+                      response times for high-load filtering queries by 300x.
+                    </li>
+                    <li>
+                      <b>Baseline Improvements:</b> Achieved a 20x speed
+                      increase across general system queries, ensuring a
+                      lag-free experience for managers handling 10,000+ employee
+                      records.
+                    </li>
+                    <li>
+                      <b>Reliability:</b> Implemented a leaky-bucket
+                      rate-limiting algorithm and background job throttling to
+                      protect our infrastructure from external API spikes and
+                      webhook floods.
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="work-category"
+                  aria-labelledby="DevOps & Infrastructure"
+                >
+                  <h4 id="DevOps & Infrastructure">DevOps & Infrastructure</h4>
+                  <p>
+                    I managed the company’s entire AWS footprint, treating
+                    infrastructure as a first-class citizen:
+                  </p>
+                  <ul role="list" class="work-info-list">
+                    <li>
+                      <b>50% Cost Reduction:</b> Conducted a comprehensive audit
+                      of our cloud spend. By migrating deprecated RDS instances
+                      and right-sizing our EC2 fleet, I slashed the monthly
+                      infrastructure bill by half while simultaneously improving
+                      system throughput.
+                    </li>
+                    <li>
+                      <b>Zero-Downtime Deployments:</b> Migrated the stack to
+                      AWS Elastic Beanstalk with rolling updates. I implemented
+                      graceful shutdown protocols to ensure that no background
+                      jobs or data transactions were lost during deployments.
+                    </li>
+                  </ul>
+                </section>
+                <section
+                  class="work-category"
+                  aria-labelledby="Acquisition & Transition"
+                >
+                  <h4 id="Acquisition & Transition">
+                    Acquisition & Transition
+                  </h4>
+                  <ul role="list" class="work-info-list">
+                    <li>
+                      My work directly contributed to the company's acquisition
+                      by ClayHR. I was offered a Full-Time Equivalent (FTE)
+                      position to lead the transition but chose to pursue new
+                      challenges as a generalist engineer.
+                    </li>
+                  </ul>
+                </section>
+              </details>
+            </article>
+          </li>
+          <li>
+            <article aria-labelledby="internship-2">
+              <header class="parent-row">
+                <div class="organization row">
+                  <h3 id="internship-2" class="col-1">Squadsy</h3>
+                  <time datetime="2023-01/2023-08" class="col-2 align-right"
+                    >01/23–08/23</time
+                  >
+                </div>
+                <div class="role row">
+                  <p class="col-1">Full Stack Developer Intern</p>
+                </div>
+              </header>
+              <p class="work-summary">
+                <!-- </p> -->
+                <!-- <details class="work-details"> -->
+                <!-- 	<summary>View detailed work</summary> -->
+                <!---->
+                <!-- 	<section class="work-category" aria-labelledby="Technical Leadership & Product Delivery"> -->
+                <!-- 		<h4 id="Technical Leadership & Product Delivery">Technical Leadership & Product Delivery</h4> -->
+                <!-- 		<ul role="list" class="work-info-list"> -->
+                <!-- 			<li> -->
+                <!-- 			</li> -->
+                <!-- 			<li> -->
+                <!-- 			</li> -->
+                <!-- 			<li> -->
+                <!-- 			</li> -->
+                <!-- 		</ul> -->
+                <!-- 	</section> -->
+                <!-- </details> -->
+              </p>
+            </article>
+          </li>
+          <li>
+            <article aria-labelledby="internship-1">
+              <header class="parent-row">
+                <div class="organization row">
+                  <h3 id="internship-1" class="col-1">
+                    Flywheel (Acquired by Sylva)
+                  </h3>
+                  <time datetime="2022-04/2022-09" class="col-2 align-right"
+                    >04/22–09/22</time
+                  >
+                </div>
+                <div class="role row">
+                  <p class="col-1">Full Stack Developer Intern</p>
+                </div>
+              </header>
+            </article>
+          </li>
+          <li>
+            <article aria-labelledby="btech-degree">
+              <header class="parent-row">
+                <div class="institution-row row">
+                  <h3 id="btech-degree" class="col-1">
+                    J.C Bose UST, YMCA, Faridabad
+                  </h3>
+                  <time datetime="2019-08/2023-08" class="col-2 align-right"
+                    >08/19–08/23</time
+                  >
+                </div>
+                <div class="degree-row row">
+                  <p class="col-1">B.Tech CSE</p>
+                  <p class="col-2 align-right">
+                    CGPA: <strong>8.62</strong>/10.00
+                  </p>
+                </div>
+              </header>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <ul role="list" class="content-list"></ul>
+      </section>
+      <hr />
+      <section id="blogs" aria-labelledby="blogs-heading">
+        <h2 id="blogs-heading">Blogs</h2>
+        <ul role="list" class="content-list"></ul>
+      </section>
+    </main>
+    <footer id="footer">
+      <p id="copyright-text">
+        <small>Copyright &copy; 2026. All Rights Reserved.</small>
+      </p>
+      <address>
+        <ul role="list" class="footer-container">
+          <li>
+            <a
+              target="_blank"
+              href="https://linkedin.com/in/itspmohit"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/aystic"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/aystic.gpg"
+              rel="noopener noreferrer"
+              >GPG Key</a
+            >
+          </li>
+        </ul>
+      </address>
+    </footer>
+  </body>
 </html>
